@@ -9,6 +9,7 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
+  background-color: #ebedd7;
 }
 
 .container {
@@ -32,6 +33,7 @@ body {
   left: -100px;
   animation: slideleft 2s ease forwards infinite;
 }
+
 .circle:nth-child(2) {
   left: 100px;
   top: -40px;
@@ -40,42 +42,55 @@ body {
 
 @keyframes rotate {
   0% {
+    background: #00e5ff;
     transform: rotate(0deg);
+  }
+  25% {
+    background: #aa00ff;
   }
   50% {
+    background: #0761ff;
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
+    background: #00e5ff;
   }
 }
 
-@keyframe slideleft {
+@keyframes slideleft {
   0% {
+    background: #325356;
     transform: translatex(0px);
   }
   25% {
+    background: #aa00ff;
     transform: translatex(-100px);
   }
   50% {
+    background: #0761ff;
     transform: translatex(0px);
   }
   100% {
-    transform: translatex(-100px);
+    background: #00e5ff;
   }
 }
 
-@keyframe slideright {
+@keyframes slideright {
   0% {
+    background: #00e5ff;
     transform: translatex(0px);
   }
   25% {
+    background: #aa00ff;
     transform: translatex(100px);
   }
   50% {
+    background: #0761ff;
     transform: translatex(0px);
   }
   100% {
-    transform: translatex(100px);
+    background: #00e5ff;
   }
 }
